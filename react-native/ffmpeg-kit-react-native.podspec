@@ -123,6 +123,9 @@ Pod::Spec.new do |s|
                              '**/FFmpegKitReactNativeModule.h'
       ss.ios.vendored_frameworks = 'framework/*.{xcframework}'
       ss.ios.deployment_target = '12.1'
+      ss.public_header_files = 'framework/ffmpegkit.xcframework/**/*.h'
+      ss.header_dir = 'ffmpegkit'
+      ss.libraries = ['z', 'bz2', 'c++', 'iconv']  # Link any system libs FFmpegKit needs
   end
   
 
