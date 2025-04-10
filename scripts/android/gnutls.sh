@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # INIT SUBMODULES
-${SED_INLINE} 's|openssl/openssl|arthenica/openssl|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
+${SED_INLINE} 's|openssl/openssl|hai-nguyen-enosta/openssl|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
 ${SED_INLINE} 's|tomato42|arthenica|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
 ${SED_INLINE} 's|warner|arthenica|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
-${SED_INLINE} 's|gitlab.com/libidn/gnulib-mirror|github.com/arthenica/gnulib|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
-${SED_INLINE} 's|gitlab.com/gnutls/libtasn1|github.com/arthenica/libtasn1|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
-${SED_INLINE} 's|gitlab.com/gnutls/nettle|github.com/arthenica/nettle|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
-${SED_INLINE} 's|gitlab.com/gnutls/abi-dump|github.com/arthenica/abi-dump|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
-${SED_INLINE} 's|gitlab.com/gnutls/cligen|github.com/arthenica/cligen|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
-${SED_INLINE} 's|gitlab.com/redhat-crypto/tests/interop|github.com/arthenica/redhat-crypto-tests-interop|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
+${SED_INLINE} 's|gitlab.com/libidn/gnulib-mirror|github.com/hai-nguyen-enosta/gnulib|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
+${SED_INLINE} 's|gitlab.com/gnutls/libtasn1|github.com/hai-nguyen-enosta/libtasn1|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
+${SED_INLINE} 's|gitlab.com/gnutls/nettle|github.com/hai-nguyen-enosta/nettle|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
+${SED_INLINE} 's|gitlab.com/gnutls/abi-dump|github.com/hai-nguyen-enosta/abi-dump|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
+${SED_INLINE} 's|gitlab.com/gnutls/cligen|github.com/hai-nguyen-enosta/cligen|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
+${SED_INLINE} 's|gitlab.com/redhat-crypto/tests/interop|github.com/hai-nguyen-enosta/redhat-crypto-tests-interop|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
 
 # UPDATE BUILD FLAGS
 export CFLAGS="$(get_cflags ${LIB_NAME}) -I${LIB_INSTALL_BASE}/libiconv/include"

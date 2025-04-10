@@ -1,0 +1,13 @@
+{
+    "name": "ffmpeg-kit-react-native",
+    "version": "1.0.0",
+    "main": "react-native/src/index.js",
+    "private": true,
+    "files": [
+      "react-native"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/hai-nguyen-enosta/ffmpeg-kit.git"
+    }
+  }

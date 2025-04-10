@@ -22,7 +22,7 @@
 #include "ffmpegkit_abidetect.h"
 
 /** Full name of the Java class that owns native functions in this file. */
-const char *abiDetectClassName = "com/arthenica/ffmpegkit/AbiDetect";
+const char *abiDetectClassName = "com/hai-nguyen-enosta/ffmpegkit/AbiDetect";
 
 /** Prototypes of native functions defined by this file. */
 JNINativeMethod abiDetectMethods[] = {

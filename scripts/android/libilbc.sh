@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # INIT SUBMODULES
-${SED_INLINE} 's|/abseil/|/arthenica/|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
+${SED_INLINE} 's|/abseil/|/hai-nguyen-enosta/|g' "${BASEDIR}"/src/"${LIB_NAME}"/.gitmodules || return 1
 git submodule update --init || return 1
 
 mkdir -p "${BUILD_DIR}" || return 1

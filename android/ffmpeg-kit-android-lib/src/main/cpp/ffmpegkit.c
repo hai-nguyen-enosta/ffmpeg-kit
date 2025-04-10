@@ -93,7 +93,7 @@ static jclass stringClass;
 static jmethodID stringConstructor;
 
 /** Full name of the Config class */
-const char *configClassName = "com/arthenica/ffmpegkit/FFmpegKitConfig";
+const char *configClassName = "com/hai-nguyen-enosta/ffmpegkit/FFmpegKitConfig";
 
 /** Full name of String class */
 const char *stringClassName = "java/lang/String";
