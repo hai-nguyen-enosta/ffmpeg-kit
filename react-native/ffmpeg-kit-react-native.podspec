@@ -121,23 +121,24 @@ Pod::Spec.new do |s|
   s.subspec 'full-gpl' do |ss|
       ss.source_files      = '**/FFmpegKitReactNativeModule.m',
                              '**/FFmpegKitReactNativeModule.h'
-      ss.ios.vendored_frameworks = 'framework/ffmpegkit.xcframework',
-                             'framework/libavcodec.xcframework',
-                             'framework/libavdevice.xcframework',
-                             'framework/libavfilter.xcframework',
-                             'framework/libavformat.xcframework',
-                             'framework/libavutil.xcframework',
-                             'framework/libswresample.xcframework',
-                             'framework/libswscale.xcframework'
+      ss.ios.vendored_frameworks = 'Frameworks/fmpeg-kit-ios-https/ffmpegkit.xcframework',
+                             'Frameworks/fmpeg-kit-ios-https/libavcodec.xcframework',
+                             'Frameworks/fmpeg-kit-ios-https/libavdevice.xcframework',
+                             'Frameworks/fmpeg-kit-ios-https/libavfilter.xcframework',
+                             'Frameworks/fmpeg-kit-ios-https/libavformat.xcframework',
+                             'Frameworks/fmpeg-kit-ios-https/libavutil.xcframework',
+                             'Frameworks/fmpeg-kit-ios-https/libswresample.xcframework',
+                             'Frameworks/fmpeg-kit-ios-https/libswscale.xcframework'
+      ss.preserve_path = 'Frameworks/fmpeg-kit-ios-https/*'
       ss.ios.deployment_target = '12.1'
-      ss.public_header_files = 'framework/ffmpegkit.xcframework/**/*.h',
-                                'framework/libavcodec.xcframework/**/*.h',
-                                'framework/libavdevice.xcframework/**/*.h',
-                                'framework/libavfilter.xcframework/**/*.h',
-                                'framework/libavformat.xcframework/**/*.h',
-                                'framework/libavutil.xcframework/**/*.h',
-                                'framework/libswresample.xcframework/**/*.h',
-                                'framework/libswscale.xcframework/**/*.h'
+      ss.public_header_files = 'Frameworks/fmpeg-kit-ios-https/ffmpegkit.xcframework/**/*.h',
+                                'Frameworks/fmpeg-kit-ios-https/libavcodec.xcframework/**/*.h',
+                                'Frameworks/fmpeg-kit-ios-https/libavdevice.xcframework/**/*.h',
+                                'Frameworks/fmpeg-kit-ios-https/libavfilter.xcframework/**/*.h',
+                                'Frameworks/fmpeg-kit-ios-https/libavformat.xcframework/**/*.h',
+                                'Frameworks/fmpeg-kit-ios-https/libavutil.xcframework/**/*.h',
+                                'Frameworks/fmpeg-kit-ios-https/libswresample.xcframework/**/*.h',
+                                'Frameworks/fmpeg-kit-ios-https/libswscale.xcframework/**/*.h'
       ss.header_dir = 'ffmpegkit'
       ss.libraries = ['z', 'bz2', 'c++', 'iconv']  # Link any system libs FFmpegKit needs
   end
