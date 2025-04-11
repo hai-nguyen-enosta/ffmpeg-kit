@@ -130,7 +130,14 @@ Pod::Spec.new do |s|
                              'framework/libswresample.xcframework',
                              'framework/libswscale.xcframework'
       ss.ios.deployment_target = '12.1'
-      ss.public_header_files = 'framework/ffmpegkit.xcframework/**/*.h'
+      ss.public_header_files = 'framework/ffmpegkit.xcframework/**/*.h',
+                                'framework/libavcodec.xcframework/**/*.h',
+                                'framework/libavdevice.xcframework/**/*.h',
+                                'framework/libavfilter.xcframework/**/*.h',
+                                'framework/libavformat.xcframework/**/*.h',
+                                'framework/libavutil.xcframework/**/*.h',
+                                'framework/libswresample.xcframework/**/*.h',
+                                'framework/libswscale.xcframework/**/*.h'
       ss.header_dir = 'ffmpegkit'
       ss.libraries = ['z', 'bz2', 'c++', 'iconv']  # Link any system libs FFmpegKit needs
   end
