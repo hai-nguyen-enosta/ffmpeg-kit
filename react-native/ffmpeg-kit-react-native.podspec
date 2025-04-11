@@ -142,6 +142,17 @@ Pod::Spec.new do |s|
       ss.header_dir = 'ffmpegkit'
       ss.libraries = ['z', 'bz2', 'c++', 'iconv']  # Link any system libs FFmpegKit needs
   end
+
+  s.subspec 'ffmpeg_kit_ios_local' do |ss|
+    ss.ios.vendored_frameworks = 'Frameworks/fmpeg-kit-ios-https/ffmpegkit.xcframework',
+                                'Frameworks/fmpeg-kit-ios-https/libavcodec.xcframework',
+                                'Frameworks/fmpeg-kit-ios-https/libavdevice.xcframework',
+                                'Frameworks/fmpeg-kit-ios-https/libavfilter.xcframework',
+                                'Frameworks/fmpeg-kit-ios-https/libavformat.xcframework',
+                                'Frameworks/fmpeg-kit-ios-https/libavutil.xcframework',
+                                'Frameworks/fmpeg-kit-ios-https/libswresample.xcframework',
+                                'Frameworks/fmpeg-kit-ios-https/libswscale.xcframework'
+  end
   
 
   s.subspec 'full-gpl-lts' do |ss|
